@@ -1,8 +1,8 @@
-import express from 'express';
-import { fetchEvents, addEvent } from '../controllers/event';
+import express from "express";
+import { fetchEvents, addEvent } from "../controllers/event";
 const router = express.Router();
 
-router.get('/', fetchEvents);
-router.post('/', addEvent);
+router.get("/", fetchEvents);
+router.post("/", addEvent);
 
 export default router;
